@@ -7,8 +7,7 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio"
   },
-  "name": "TPOP",
-  "packageManager": "yarn@4.6.0",
+  "name": "tpop-backend",
   "dependencies": {
     "@prisma/client": "6.5.0",
     "bcrypt-ts": "^6.0.0",
