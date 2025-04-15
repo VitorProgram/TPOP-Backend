@@ -71,12 +71,12 @@ export const login = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
-// Deletando usuário pelo id (via body)
+// Deletando usuário pelo id (via params da URL)
 export const deleteUser = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  const { id } = req.body;
+  const { id } = req.params; // Captura o ID da URL
 
   if (!id) {
     res.status(400).json({ message: "ID do usuário não fornecido." });
